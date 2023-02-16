@@ -72,14 +72,10 @@ It will fulfill this action with the simple x step process:
 
 <p>Because of this, we are starting with phase 1, the oracle and the contract level, if the oracle can be set up as to accept this verification, then we're in business.</p>
 
-<h1>PHASE 1: THE ORACLE AND THE CONTRACT LEVEL</h1>
-
-<h2>THE ORACLE 🌐</h2>
-
-<p>We are reaching out to the team at Chainlink to discuss whether such a DON (decentralized oracle network) is able to be set-up and also fulfil this verification, whilst being cost effective. If the answer is no, we will have to build our own oracle mechanism that relies somehow on the $CAPTCHA token.</p>
-
-<p>Honestly chainlink is hard to set up for such a custom job, so for now we're going to make our own oracle, that will be embedded into the token, and will be validated by other peers (more bobs!)</p>
-
-<p>Here is how the oracle mechanism works:</p>
-
-<img alt="image of the MVP of the oracle mechanism" src="./diagrams/MVP_Oracle.png"></img>
+<p>The order of development is the following, access each phase by going to its respective directory:
+  <ol>
+  <li>oracle</li>
+  <li>smartContract</li>
+  <li>frontend</li>
+  </ol>
+</p>
