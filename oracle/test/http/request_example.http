@@ -1,0 +1,4 @@
+# In curl it's just :``curl -X 'GET'   'https://boards.4channel.org/biz/thread/53733144'``
+# The hyperlink will be changed as time goes on because of expiry, placeholder value
+GET https://boards.4channel.org/biz/thread/53733144
+
