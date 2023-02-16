@@ -82,4 +82,4 @@ It will fulfill this action with the simple x step process:
 
 <p>Here is how the oracle mechanism works:</p>
 
-<img alt="image of the MVP of the oracle mechanism" src=""></img>
+<img alt="image of the MVP of the oracle mechanism" src="./diagrams/MVP_Oracle.png"></img>
