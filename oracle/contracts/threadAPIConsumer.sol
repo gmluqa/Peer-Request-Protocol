@@ -1,82 +1,67 @@
-// SPDX-License-Identifier: MIT
-// TO-DO: define read docs and understand if this is the right architecture
+//SPDX-License-Identifier: MIT
 pragma solidity ^0.8.17;
 
 import "@chainlink/contracts/src/v0.8/ChainlinkClient.sol";
 import "@chainlink/contracts/src/v0.8/ConfirmedOwner.sol";
 
-contract APIConsumer is ChainlinkClient, ConfirmedOwner {
+contract CaptchaSolve is ChainlinkClient, ConfirmedOwner {
     using Chainlink for Chainlink.Request;
 
-    uint256 public volume;
+    // variable bytes(arbitrary-length raw byte data) returned in a single oracle response
+    bytes public data;
+    string public url_output;
+
     bytes32 private jobId;
     uint256 private fee;
 
-    event RequestVolume(bytes32 indexed requestId, uint256 volume);
-
     /**
      * @notice Initialize the link token and target oracle
+     * @dev The oracle address must be an Operator contract for multiword response
+     *
      *
      * Sepolia Testnet details:
      * Link Token: 0x779877A7B0D9E8603169DdbD7836e478b4624789
      * Oracle: 0x6090149792dAAeE9D1D568c9f9a6F6B46AA29eFD (Chainlink DevRel)
-     * jobId: ca98366cc7314957b8c012c72f05aeeb
+     * jobId: 7da2702f37fd48e5b1b9a5715e3509b6
      *
      */
     constructor() ConfirmedOwner(msg.sender) {
         setChainlinkToken(0x779877A7B0D9E8603169DdbD7836e478b4624789);
         setChainlinkOracle(0x6090149792dAAeE9D1D568c9f9a6F6B46AA29eFD);
-        jobId = "ca98366cc7314957b8c012c72f05aeeb";
+        jobId = "7da2702f37fd48e5b1b9a5715e3509b6";
         fee = (1 * LINK_DIVISIBILITY) / 10; // 0,1 * 10**18 (Varies by network and job)
     }
 
     /**
-     * Create a Chainlink request to retrieve API response, find the target
-     * data, then multiply by 1000000000000000000 (to remove decimal places from data).
+     * @notice Request variable bytes from the oracle
      */
-    function requestVolumeData() public returns (bytes32 requestId) {
+    function requestBytes() public {
         Chainlink.Request memory req = buildChainlinkRequest(
             jobId,
             address(this),
-            this.fulfill.selector
+            this.fulfillBytes.selector
         );
-
-        // Set the URL to perform the GET request on
         req.add(
             "get",
-            "https://min-api.cryptocompare.com/data/pricemultifull?fsyms=ETH&tsyms=USD"
+            "https://ipfs.io/ipfs/QmZgsvrA1o1C8BGCrx6mHTqR1Ui1XqbCrtbMVrRLHtuPVD?filename=big-api-response.json"
         );
-
-        // Set the path to find the desired data in the API response, where the response format is:
-        // {"RAW":
-        //   {"ETH":
-        //    {"USD":
-        //     {
-        //      "VOLUME24HOUR": xxx.xxx,
-        //     }
-        //    }
-        //   }
-        //  }
-        // request.add("path", "RAW.ETH.USD.VOLUME24HOUR"); // Chainlink nodes prior to 1.0.0 support this format
-        req.add("path", "RAW,ETH,USD,VOLUME24HOUR"); // Chainlink nodes 1.0.0 and later support this format
-
-        // Multiply the result by 1000000000000000000 to remove decimals
-        int256 timesAmount = 10 ** 18;
-        req.addInt("times", timesAmount);
-
-        // Sends the request
-        return sendChainlinkRequest(req, fee);
+        req.add("path", "image");
+        sendChainlinkRequest(req, fee);
     }
 
+    event RequestFulfilled(bytes32 indexed requestId, bytes indexed data);
+
     /**
-     * Receive the response in the form of uint256
+     * @notice Fulfillment function for variable bytes
+     * @dev This is called by the oracle. recordChainlinkFulfillment must be used.
      */
-    function fulfill(
-        bytes32 _requestId,
-        uint256 _volume
-    ) public recordChainlinkFulfillment(_requestId) {
-        emit RequestVolume(_requestId, _volume);
-        volume = _volume;
+    function fulfillBytes(
+        bytes32 requestId,
+        bytes memory bytesData
+    ) public recordChainlinkFulfillment(requestId) {
+        emit RequestFulfilled(requestId, bytesData);
+        data = bytesData;
+        url_output = string(data);
     }
 
     /**
