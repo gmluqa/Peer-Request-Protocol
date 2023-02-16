@@ -3,11 +3,15 @@ CAPTCHA_SOLVE is a peer 2 peer puzzle solving platform.
 </h1>
 
 <h2>Initial plan</h2>
-I came up with this idea when filling out captcha's to use sites, what if I could just have the puzzle be automated instead?
 
-This repository is quite literally that, I am going to code it as they say "a lo guarro" but be hopeful about the fact that we do end up delivering on a proof-of-concept, and with some luck, a minimal-viable-product. Don't expect this repository to be super clean, I am starting this as a solo contributor.
+<p>I came up with this idea when filling out captcha's to use sites, what if I could just have the puzzle be automated instead?</p>
 
-For a proof-of-concept goal of this technology, the goal will be emitting an action on the web forum 4chan, starting a "thread".
+<p>
+This repository is quite literally that, I am going to code it as they say "a lo guarro" (that means messily in Spanish) but be hopeful about the fact that we do end up delivering on a proof-of-concept, and with some luck, a minimal-viable-product. Don't expect this repository to be super clean, I am starting this as a solo contributor.
+</p>
+
+<p>For a proof-of-concept goal of this technology, the goal will be emitting an action on the web forum 4chan, starting a "thread".
+</p>
 
 <h2>How the POC will be demonstrated</h2>
 It will fulfill this action with the simple x step process:
@@ -25,34 +29,37 @@ It will fulfill this action with the simple x step process:
 </ol>
 </div>
 
-<img alt="image of the MVP of the visual interface" src=""></img>
+<h2>User interface</h2>
 
-<div>This UI prototype will allow any peer to fill out any request and execute this computation in a puzzle-agnostic way.</div>
+<img alt="image of the MVP of the visual interface" src="./diagrams/MVP_visual_interface.png"></img>
 
-<div>The method of incentivization of which this peer solving this puzzle will act, is by accepting a form of monetary recompense, there is no better solution to this problem than involving any cryptocurrency with low tx fees, for purposes of the POC, we have simply decided to go with fantom(FTM)</div>
+<p>This UI prototype will allow any peer to fill out any request and execute this computation in a puzzle-agnostic way.</p>
 
-<div>Here is a schematic that explains the incentivisation mechanism:</div>
+<p>The method of incentivization of which this peer solving this puzzle will act, is by accepting a form of monetary recompense, there is no better solution to this problem than involving any cryptocurrency with low tx fees, for purposes of the POC, we have simply decided to go with fantom(FTM)</p>
 
-<img alt="image of the incentivisation mechanism" src=""></img>
+<p>Here is a schematic that explains the incentivisation mechanism:</p>
+
+<img alt="image of the incentivisation mechanism" src="./diagrams/MVP_Incentives_mechanism.png"></img>
 
 <div>The POC will be marked as a success if the following things happen:
 <ol>
-  <li>Anyone can access the interface and input a request</li>
+  <li>Oracles can verify if a post was made inside of an SLA</li>
+  <li>The contract can recieve the response from the oracles that the post was made</li>
+  <li>The interface exists on the contract level and can be called by anyone</li>
   <li>The request computation can be payed for</li>
-  <li>The output of the computation is output, and verified</li>
+  <li>The output of the computation is output, and have the post verified</li>
 </ol>
 </div>
 
-<h1>
-Why would this project be revolutionary?</h1>
+<h1>Why would this project be revolutionary?</h1>
 
 <div>One may not understand the value of delivering on this POC, but the applications of such a technology are the following:
 <ul>
-  <li>Incentivizing peers to deliver chatGPT messages inside of an SLA (doesn't even require a captcha, just requires verification of the output and an SLA)</li>
   <li>Incentivizing peers to solve captchas 'en masse' on a determined website</li>
   <li>Incentivizing for prime number discovery, verified incentivization of unlocking an unknown prime number</li>
   <li>Incentivizing guesswork of secrets</li>
   <li>Puzzle or computation resolution</li>
+    <li>Incentivizing peers to deliver chatGPT messages inside of an SLA (doesn't even require a captcha, just requires verification of the output and an SLA)</li>
   <li>Incentivization for fulfilment of tasks</li>
 </ul>
 </div>
@@ -69,4 +76,4 @@ Why would this project be revolutionary?</h1>
 
 <h2>THE ORACLE</h2>
 
-<div>We are reaching out to the team at Chainlink to discuss whether such a DON (decentralized oracle network) is able to be set-up and also fulfil this verification.</div>
+<div>We are reaching out to the team at Chainlink to discuss whether such a DON (decentralized oracle network) is able to be set-up and also fulfil this verification. If the answer is no, we will have to build our own oracle mechanism and </div>
