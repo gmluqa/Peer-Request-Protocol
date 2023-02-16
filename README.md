@@ -37,7 +37,7 @@ It will fulfill this action with the simple x step process:
 
 <p>The method of incentivization of which this peer solving this puzzle will act, is by accepting a form of monetary recompense, there is no better solution to this problem than involving any cryptocurrency with low tx fees, for purposes of the POC, we have simply decided to go with fantom(FTM)</p>
 
-<p>Here is a schematic that explains the incentivisation mechanism:</p>
+<h2>Incentivisation Mechanism</h2>
 
 <img alt="image of the incentivisation mechanism" src="./diagrams/MVP_Incentives_mechanism.png"></img>
 
@@ -76,4 +76,4 @@ It will fulfill this action with the simple x step process:
 
 <h2>THE ORACLE</h2>
 
-<div>We are reaching out to the team at Chainlink to discuss whether such a DON (decentralized oracle network) is able to be set-up and also fulfil this verification. If the answer is no, we will have to build our own oracle mechanism and </div>
+<div>We are reaching out to the team at Chainlink to discuss whether such a DON (decentralized oracle network) is able to be set-up and also fulfil this verification, whilst being cost effective. If the answer is no, we will have to build our own oracle mechanism that relies somehow on the $CAPTCHA token.</div>
