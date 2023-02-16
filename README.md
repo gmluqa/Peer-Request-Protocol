@@ -59,8 +59,7 @@ It will fulfill this action with the simple x step process:
   <li>Incentivizing for prime number discovery, verified incentivization of unlocking an unknown prime number</li>
   <li>Incentivizing guesswork of secrets</li>
   <li>Puzzle or computation resolution</li>
-    <li>Incentivizing peers to deliver chatGPT messages inside of an SLA (doesn't even require a captcha, just requires verification of the output and an SLA)</li>
-  <li>Incentivization for fulfilment of tasks</li>
+  <li>Incentivization for fulfilment of tasks (any web2 task)</li>
 </ul>
 </div>
 

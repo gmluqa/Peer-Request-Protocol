@@ -1,0 +1,19 @@
+{
+  "name": "captcha_solve",
+  "version": "1.0.0",
+  "description": "Peer 2 Peer forum posting.",
+  "main": "README.md",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gmluqa/CAPTCHA_SOLVE.git"
+  },
+  "author": "gmluqa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gmluqa/CAPTCHA_SOLVE/issues"
+  },
+  "homepage": "https://github.com/gmluqa/CAPTCHA_SOLVE#readme"
+}
