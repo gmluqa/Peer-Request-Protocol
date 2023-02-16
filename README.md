@@ -53,6 +53,7 @@ Why would this project be revolutionary?</h1>
   <li>Incentivizing for prime number discovery, verified incentivization of unlocking an unknown prime number</li>
   <li>Incentivizing guesswork of secrets</li>
   <li>Puzzle or computation resolution</li>
+  <li>Incentivization for fulfilment of tasks</li>
 </ul>
 </div>
 
