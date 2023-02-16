@@ -77,3 +77,5 @@ It will fulfill this action with the simple x step process:
 <h2>THE ORACLE 🌐</h2>
 
 <p>We are reaching out to the team at Chainlink to discuss whether such a DON (decentralized oracle network) is able to be set-up and also fulfil this verification, whilst being cost effective. If the answer is no, we will have to build our own oracle mechanism that relies somehow on the $CAPTCHA token.</p>
+
+<p>Honestly chainlink is hard to set up for such a custom job, so for now we're going to make our own oracle, that will be embedded into the token, and will be validated by other peers (more bobs!)</p>
