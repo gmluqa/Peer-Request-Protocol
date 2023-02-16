@@ -1,5 +1,5 @@
 <h1>
-CAPTCHA_SOLVE is a peer 2 peer puzzle solving platform.
+CAPTCHA_SOLVE is a peer 2 peer puzzle solving platform 🧩
 </h1>
 
 <h2>Initial plan</h2>
@@ -13,7 +13,7 @@ This repository is quite literally that, I am going to code it as they say "a lo
 <p>For a proof-of-concept goal of this technology, the goal will be emitting an action on the web forum 4chan, starting a "thread".
 </p>
 
-<h2>How the POC will be demonstrated</h2>
+<h2>How the POC will be demonstrated 🤷</h2>
 It will fulfill this action with the simple x step process:
 
 <div>
@@ -29,7 +29,7 @@ It will fulfill this action with the simple x step process:
 </ol>
 </div>
 
-<h2>User interface</h2>
+<h2>User interface 💻️</h2>
 
 <img alt="image of the MVP of the visual interface" src="./diagrams/MVP_visual_interface.png"></img>
 
@@ -37,7 +37,7 @@ It will fulfill this action with the simple x step process:
 
 <p>The method of incentivization of which this peer solving this puzzle will act, is by accepting a form of monetary recompense, there is no better solution to this problem than involving any cryptocurrency with low tx fees, for purposes of the POC, we have simply decided to go with fantom(FTM)</p>
 
-<h2>Incentivisation Mechanism</h2>
+<h2>Incentivisation Mechanism 🪙</h2>
 
 <img alt="image of the incentivisation mechanism" src="./diagrams/MVP_Incentives_mechanism.png"></img>
 
@@ -51,7 +51,7 @@ It will fulfill this action with the simple x step process:
 </ol>
 </div>
 
-<h1>Why would this project be revolutionary?</h1>
+<h1>Why would this project be revolutionary? 🐉</h1>
 
 <div>One may not understand the value of delivering on this POC, but the applications of such a technology are the following:
 <ul>
@@ -74,6 +74,6 @@ It will fulfill this action with the simple x step process:
 
 <h1>PHASE 1: THE ORACLE AND THE CONTRACT LEVEL</h1>
 
-<h2>THE ORACLE</h2>
+<h2>THE ORACLE 🌐</h2>
 
 <div>We are reaching out to the team at Chainlink to discuss whether such a DON (decentralized oracle network) is able to be set-up and also fulfil this verification, whilst being cost effective. If the answer is no, we will have to build our own oracle mechanism that relies somehow on the $CAPTCHA token.</div>
