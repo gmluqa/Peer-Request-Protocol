@@ -1,5 +1,5 @@
 <h1>
-Peer Request Protocol is a HTTP request incentivization system 🚣 
+Peer Request Protocol is a HTTP request incentivization system 🤝
 </h1>
 
 <p>Imagine that Alice, is a video content creator. She uploads videos to YouTube but she barely gets any views on them. She decides that she would rather have 1000 views per video she uploads rather than her usual 27 views.</p>
@@ -16,11 +16,11 @@ Peer Request Protocol is a HTTP request incentivization system 🚣
 </ul>
 </p>
 
-<h1>Initial plan</h1>
+<h1>Pilot 🛫</h1>
 
 <p>For a proof-of-concept goal of this technology, the goal will be having a tweet reach 10 likes via direct usage of the protocol</p>
 
-<h2>How the POC will be demonstrated 🤷</h2>
+<h2>How the POC will be demonstrated </h2>
 It will fulfill this action with the simple x step process:
 
 <div>
@@ -56,9 +56,9 @@ It will fulfill this action with the simple x step process:
 
 <img alt="image of the incentivisation mechanism" src="./diagrams/MVP_Incentives_mechanism.png"></img>
 
-<h1>Success criteria</h1>
+<h1>Success criteria ✅</h1>
 
-<div>The POC will be marked as a success if the following things happen:
+<p>The POC will be marked as a success if the following things happen: </p>
 <ol>
   <li>Oracles can verify if a post was made inside of an SLA</li>
   <li>The contract can recieve the response from the oracles that the post was made</li>
@@ -66,4 +66,3 @@ It will fulfill this action with the simple x step process:
   <li>The request computation can be payed for</li>
   <li>The output of the computation is output, and have the post verified</li>
 </ol>
-</div>
