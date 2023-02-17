@@ -16,7 +16,7 @@ Peer Request Protocol is a HTTP request incentivization system 🚣
 </ul>
 </p>
 
-<h2>Initial plan</h2>
+<h1>Initial plan</h1>
 
 <p>For a proof-of-concept goal of this technology, the goal will be having a tweet reach 10 likes via direct usage of the protocol</p>
 
@@ -27,12 +27,32 @@ It will fulfill this action with the simple x step process:
 <ol>
   <li>Interface, where a user submits a link to a tweet they want liked
 </li>
-  <li>Being userable to pay accordingly, for the smart contract to fulfil this request
+  <li>Being able to pay a transaction for the smart contract to fulfil this request
 </li>
   <li>Sufficient peer power and a network who's incentives matches the want to accept this job
 </li>
 </ol>
 </div>
+
+<p>
+  There are 3 layers to the blockend, they consist of:
+  <ol>
+  <li>The Oracle Layer</li>
+  <li>The Peer Network</li>
+  <li>The Smart Contract</li>
+  </ol>
+</p>
+
+<p>Frameworks for Oracles exist, such as Chainlink, and of course, so do ones for SmartContracts, but Peer Request Protocol will have to erect it's own Peer network, here is how it will be done:</p>
+
+<ol>
+  <li>Create an erc20 token, that may become a governance token in the future named $PRP</li>
+  <li>Find Peers that would be willing to participate in this experiment, and give them some $PRP completely free</li>
+  <li>Have a very intuitive peer dashboard UI, in which the peer will be guided to preform given tasks</li>
+  <li>Have such an incentives mechanism in place so that once the network is Bootstrapped, peers will commit to responding to requests</li>
+</ol>
+
+<p>Initially, for reasons of the POC, there will be heavy bootstrapping of the peer network, however, the real value would emerge if the $PRP peer network is able to incentivize itself all through the requestor to peer cycle, without the need for constant monitoring from part of the team.</p>
 
 TO-DO: CHANGE SECTION
 
