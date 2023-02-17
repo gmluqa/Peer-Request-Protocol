@@ -54,21 +54,9 @@ It will fulfill this action with the simple x step process:
 
 <p>Initially, for reasons of the POC, there will be heavy bootstrapping of the peer network, however, the real value would emerge if the $PRP peer network is able to incentivize itself all through the requestor to peer cycle, without the need for constant monitoring from part of the team.</p>
 
-TO-DO: CHANGE SECTION
+<img alt="image of the incentivisation mechanism" src="./diagrams/MVP_Incentives_mechanism.png"></img>
 
-<!-- <h2>User interface 💻️</h2>
-
-<img alt="image of the MVP of the visual interface" src="./diagrams/MVP_visual_interface.png"></img>
-
-<p>This UI prototype will allow any peer to fill out any request and execute this computation in a puzzle-agnostic way.</p>
-
-<p>The method of incentivization of which this peer solving this puzzle will act, is by accepting a form of monetary recompense, there is no better solution to this problem than involving any cryptocurrency with low tx fees, for purposes of the POC, we have simply decided to go with fantom(FTM)</p>
-
-<h2>Incentivisation Mechanism 🪙</h2> -->
-
-TO-DO: CHANGE SECTION
-
-<!-- <img alt="image of the incentivisation mechanism" src="./diagrams/MVP_Incentives_mechanism.png"></img>
+<h1>Success criteria</h1>
 
 <div>The POC will be marked as a success if the following things happen:
 <ol>
@@ -78,4 +66,4 @@ TO-DO: CHANGE SECTION
   <li>The request computation can be payed for</li>
   <li>The output of the computation is output, and have the post verified</li>
 </ol>
-</div> -->
+</div>
