@@ -60,9 +60,9 @@ It will fulfill this action with the simple x step process:
 
 <p>The POC will be marked as a success if the following things happen: </p>
 <ol>
-  <li>Oracles can verify if a post was made inside of an SLA</li>
-  <li>The contract can recieve the response from the oracles that the post was made</li>
+  <li>Oracles can verify the number of likes on a post in the SLA</li>
+  <li>The contract can recieve the response from the oracles of the number of likes</li>
   <li>The interface exists on the contract level and can be called by anyone</li>
   <li>The request computation can be payed for</li>
-  <li>The output of the computation is output, and have the post verified</li>
+  <li>The protocol decides wether peers completed the request or not</li>
 </ol>
