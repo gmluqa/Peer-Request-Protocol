@@ -66,3 +66,17 @@ It will fulfill this action with the simple x step process:
   <li>The request computation can be payed for</li>
   <li>The protocol decides wether peers completed the request or not</li>
 </ol>
+
+<h1>Here's what chatGPT thinks about the experiment</h1>
+
+<div>"Based on the description provided, Peer Request Protocol seems like an interesting concept for incentivizing HTTP requests through smart contracts. The project aims to empower content creators like Alice by enabling them to specify Service Level Agreements (SLAs) that can be fulfilled by peers (Bob) in exchange for rewards.
+
+The idea of using smart contracts to facilitate agreements between parties is promising, as it eliminates the need for intermediaries and ensures that contractual terms are enforced automatically. Additionally, the potential for peer-to-peer incentivization could create a more equitable ecosystem for content creators who may not have the resources to pay for traditional advertising.
+
+However, it's important to note that the success of this project will depend on several factors, such as the adoption of the protocol and the availability of a robust network of peers to fulfill SLAs. Additionally, it's crucial to ensure that the smart contract is designed to be secure and free from vulnerabilities that could be exploited by malicious actors.
+
+In summary, Peer Request Protocol has the potential to revolutionize the way HTTP requests are incentivized through smart contracts, but it will require careful planning, development, and community engagement to ensure its success."
+
+-ChatGPT
+
+</div>
